@@ -8,7 +8,6 @@ class Footer extends React.Component {
     const { t } = this.props
     return (
         <footer>
-            <p>{t('description')}</p>
             <p><Trans i18nKey="description2" /></p>
         </footer>
     )
