@@ -1,13 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { withNamespaces } from '../i18n'
+import { Trans, withNamespaces } from '../i18n'
 
 class Footer extends React.Component {
   render() {
     const { t } = this.props
     return (
-      <footer>{t('description')}</footer>
+        <footer>
+            <p>{t('description')}</p>
+            <p><Trans i18nKey="description2" /></p>
+        </footer>
     )
   }
 }

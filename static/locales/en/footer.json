@@ -1,3 +1,4 @@
 {
-  "description": "This is a non-page component that requires its own namespace"
+  "description": "This is the footer with the javascript way of grabbing the description",
+  "description2": "This is the footer with the html element way of grabbing the description"
 }

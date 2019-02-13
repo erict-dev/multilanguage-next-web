@@ -18,7 +18,7 @@ class Navbar extends React.Component {
             </Link>
             <button
               type='button'
-              onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'de' : 'en')}
+              onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'cn' : 'en')}
             >
               {t('change-locale')}
             </button>

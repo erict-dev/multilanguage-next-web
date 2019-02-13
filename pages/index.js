@@ -1,16 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { i18n, Link, withNamespaces } from '../i18n'
+import { Trans, i18n, Link, withNamespaces } from '../i18n'
 
 import Layout from '../components/Layout'
-import Title from '../components/Title'
 import Footer from '../components/Footer'
 
 class Homepage extends React.Component {
   static async getInitialProps() {
     return {
-      namespacesRequired: ['common', 'footer'],
+      namespacesRequired: ['common', 'home'],
     }
   }
 
@@ -18,7 +17,7 @@ class Homepage extends React.Component {
     const { t } = this.props
     return (
       <Layout>
-        <Title />
+          <h1>{t('home-title')}</h1>
       </Layout>
     )
   }
@@ -28,4 +27,4 @@ Homepage.propTypes = {
   t: PropTypes.func.isRequired,
 }
 
-export default withNamespaces('common')(Homepage)
+export default withNamespaces('home')(Homepage)
